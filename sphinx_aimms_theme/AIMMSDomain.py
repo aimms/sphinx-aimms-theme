@@ -570,9 +570,9 @@ class AIMMSDomain(Domain):
             return '::'.join(filter(None, [modname, prefix, target]))
 
 
-def setup(app):
-    # type: (Sphinx) -> Dict[str, Any]
-    app.add_domain(AIMMSDomain)
-    logger = logging.getLogger(__name__)
-    logger.info('\nAIMMS Domain added')
+# def setup(app):
+    # # type: (Sphinx) -> Dict[str, Any]
+    # app.add_domain(AIMMSDomain)
+    # logger = logging.getLogger(__name__)
+    # logger.info('\nAIMMS Domain added')
 
