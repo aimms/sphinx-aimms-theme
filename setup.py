@@ -6,14 +6,14 @@ import sys
 setup(
     
     name = "sphinx_aimms_theme",
-    version = '1.0.0',
+    version = '0.0.1',
     license = "MIT",
     packages= ['sphinx_aimms_theme'],
-    url = "https://github.com/pietroalbini/sphinx-themes",
+    url = "https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme",
+    description = 'AIMMS theme for Sphinx',
+    long_description=open('README.md').read(),
     author = "AIMMS User Support",
     author_email = "support@aimms.com",
-
-    description = "AIMMS theme for Sphinx",
 
     
     entry_points = {
@@ -25,5 +25,14 @@ setup(
        'sphinx',
        'sphinx_rtd_theme',
     ],
+    package_data={'sphinx_aimms_theme': [
+        'theme.conf',
+        '*.html',
+        'static/*.css',
+        'static/*.js',
+        'static/*.png',
+        'static/icons/*.*'
+    ]},
+    include_package_data=True,
 
 )
