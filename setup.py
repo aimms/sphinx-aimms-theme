@@ -11,7 +11,7 @@ setup(
     packages= ['sphinx_aimms_theme'],
     url = "https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme",
     description = 'AIMMS theme for Sphinx',
-    long_description=open('README.md').read(),
+    long_description='Please refer to https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme',
     author = "AIMMS User Support",
     author_email = "support@aimms.com",
 
