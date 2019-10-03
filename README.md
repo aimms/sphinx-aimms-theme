@@ -43,14 +43,17 @@ html_theme_options = {
 }
 ```
 
-**doc_title**
 
-Title you will see on the top left corner of your docs
+* **doc_title** 
 
-**home_page_description**
-
-Description that will appear in the html meta description of your home page
+    Title you will see on the top left corner of your docs
 
 
+* **home_page_description** 
+
+    Description that will appear in the html meta description of your home page
+
+Note
+---------
 
 This theme is highly customizable on both the page level and on a global level. See https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html 
