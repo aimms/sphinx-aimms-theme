@@ -71,9 +71,6 @@ html_theme_options = {
 
     Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page
 
-* **display_community_embeddable** 
-
-    Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page
     
     
 
