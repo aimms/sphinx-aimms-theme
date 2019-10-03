@@ -42,21 +42,23 @@
 {% endif %} {% endblock %} 
 {% block htmltitle %} {% if pagename == master_doc %}
 
-<title>{{ _('AIMMS How-To &mdash; Help &amp; Support') }}</title>
+<title>{{ theme_home_page_title }}</title>
 
 {% else %}
 
-<title>{{ title|striptags|e }} &mdash; AIMMS How-To &mdash; Help &amp; Support</title>
+<title>{{ title|striptags|e }} &mdash; {{ theme_home_page_title }}</title>
 
 {% endif %} {% endblock %} 
 
 {% block document %} {{ super() }} 
 
-<a href="https://community.aimms.com/search?q={{ title|striptags|e }}" target="_blank">Give feedback on the AIMMS Community</a> {% endblock %} 
+{% if theme_display_community_help_link %}
+<a href="https://community.aimms.com/search?q={{ title|striptags|e }}" target="_blank">Give feedback on the AIMMS Community</a> {% endif %} {% endblock %} 
+
 
 {% block footer %} {{ super() }}
 
-{% if Display_3rd_Party_Extensions %}
+{% if theme_display_community_embeddable %}
 
 <!-- Insided embeddable -->
 <script>
