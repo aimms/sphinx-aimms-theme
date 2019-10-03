@@ -2,6 +2,9 @@
 
 This Sphinx theme was designed to provide a great reader experience for documentation users on both desktop and mobile devices for AIMMS projects.
 
+**This theme also includes an AIMMS [pygment lexer](http://pygments.org/) to highlight your AIMMS [code blocks in sphinx](http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block) and an AIMMS [Domain](http://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html) to document your own AIMMS code.**
+Please find the documentation of those 2 elements in the Wiki.
+
 This theme is inherited from the great [Read the Docs](https://github.com/readthedocs/sphinx_rtd_theme) but can work with any Sphinx project. 
 
 You can find a working demo of the theme on AIMMS documentation websites:
