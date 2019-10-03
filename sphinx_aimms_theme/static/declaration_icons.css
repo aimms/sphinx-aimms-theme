@@ -105,3 +105,21 @@ dl.mathematicalprogram em.property {
     padding-left: 20px;
     padding-top: 2px;
 }
+
+dl.file em.property {
+    
+    background-image: url("icons/MEDeclFile.PNG");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+dl.handle em.property {
+    
+    background-image: url("icons/MEDeclHandle.PNG");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 2px;
+}
