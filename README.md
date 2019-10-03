@@ -77,4 +77,10 @@ html_theme_options = {
 Note
 ---------
 
+**All readthedocs options are available as well !**
+
+https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
+
 This theme is highly customizable on both the page level and on a global level. See https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html 
+
+
