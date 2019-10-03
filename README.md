@@ -49,15 +49,33 @@ html_theme_options = {
 }
 ```
 
+*(if not specified, the option is a string)*
 
 * **doc_title** 
 
     Title you will see on the top left corner of your docs
 
+* **home_page_title** 
+
+    HTML Title that will appear in the html meta title of your home page 
 
 * **home_page_description** 
 
     Description that will appear in the html meta description of your home page
+    
+* **display_community_help_link** 
+
+    Boolean - Displays a link at the bottom of every article redirecting to the [AIMMS community](https://community.aimms.com/) search page filled with the title of the current page.
+    
+* **display_community_embeddable** 
+
+    Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page
+
+* **display_community_embeddable** 
+
+    Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page
+    
+    
 
 Note
 ---------
