@@ -1,6 +1,5 @@
 from os import path
 from sphinx.util import logging
-import AIMMSDomain
 
 def setup(app):
 
