@@ -3,8 +3,8 @@
 This Sphinx theme was designed to provide a great reader experience for documentation users on both desktop and mobile devices for AIMMS projects.
 
 **This theme also includes:** 
-- an **AIMMS [pygment lexer](http://pygments.org/)** to highlight your AIMMS [code blocks in sphinx](http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block) 
-- an **AIMMS [Domain](http://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html)** to document your own AIMMS code.
+- an **AIMMS [pygment lexer](https://pygments.org/)** to highlight your AIMMS [code blocks in sphinx](http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block) 
+- an **AIMMS [Domain](https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html)** to document your own AIMMS code.
 
 Please find the documentation of those 2 elements in the Wiki.
 
