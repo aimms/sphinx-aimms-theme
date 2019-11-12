@@ -29,7 +29,7 @@ As you can see, both directive and role names contain the domain name and the di
 The AIMMS Domain
 ===================
 
-The AIMMS domain (name aimms) provides the following directives:
+The AIMMS domain (name ``aimms``) provides the following directives:
 
 ```
 .. aimms:module:: name
