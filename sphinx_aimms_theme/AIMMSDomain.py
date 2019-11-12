@@ -475,7 +475,7 @@ class AIMMSDomain(Domain):
         'constraint': AIMMSXRefRole(fix_parens=True),
         'mathematicalprogram': AIMMSXRefRole(fix_parens=True),
         'file': AIMMSXRefRole(fix_parens=True),
-        'hamdle': AIMMSXRefRole(fix_parens=True),
+        'handle': AIMMSXRefRole(fix_parens=True),
         'data':      AIMMSXRefRole(),
         'attr':      AIMMSXRefRole(),
         'mod':       AIMMSXRefRole(),
