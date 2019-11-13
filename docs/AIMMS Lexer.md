@@ -64,6 +64,8 @@ Please try to change the css file name when making a change to it, like appendin
 
 ``aimms-theme-20191211.css``
 
+![image](uploads/inspect.png)
+
 Current types that are "supported"
 -----------------------------------
 If you look at the bottom of the aimms-theme.css file, you should see something like:
