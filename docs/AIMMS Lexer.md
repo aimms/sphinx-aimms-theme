@@ -18,7 +18,7 @@ To use is it, you should use the `code-block` directive, as follows:
     P_Demand(i) := Uniform(1,200)
 ```
 
-See an example [here](https://how-to.aimms.com/Generate%20Random%20Numbers.html#csvinterface-ams) 
+See an example [here](https://how-to.aimms.com/Articles/132/132-Repetive-Patterns-Model-Edit.html) 
 
 Currently supported prefixes and their colors (**case insensitive**)
 -------------------------------------------------------------------
@@ -57,14 +57,16 @@ Current supported Types and their associated color (based on AIMMS color IDE)
 How-To customize Highlighted colors
 --------------------------------------
 
-For now on, every colors are defined in the [Hacks.css file](https://gitlab.aimms.com/aimms/documentation/blob/master/_static/Hacks.css). You may scroll down till the end of the file, and see the basic css there.
+For now on, colors are defined in the [aimms-theme.css file](../sphinx_aimms_theme/static/aimms-theme.css). You may scroll down till the end of the file, and see the basic css there.
 
-Please be aware that modifying the CSS file is not considered as a change in any RST file, thus **Sphinx will not rebuild the 
-doc**. In order to force sphinx to append the new css file, just make a dummy change to the file you want to rebuild (add a space, remove it and save the rst document, that's sufficient).
+Please be aware that modifying the CSS file might not be reflected to all repos, because browsers sometimes use cached css files if the name of the css isn't changed. 
+Please try to change the css file name when making a change to it, like appending the date for example:
+
+``aimms-theme-20191211.css``
 
 Current types that are "supported"
 -----------------------------------
-If you look at the bottom of the Hacks.css file, you should see something like:
+If you look at the bottom of the aimms-theme.css file, you should see something like:
 ``` css
 /*--------  Styling for AIMMS declared identifier name by type (see AIMMS PowerPoint colour palette) --------------*/
 
@@ -93,9 +95,7 @@ div.highlight-aimms span.n.n-Convention {color:black;}
 ```
 
 
-As you can see, this CSS is referring to some particular class (css selector), for example ``n.n-Parameter``. Since it is CSS styling, you can check your file directly in the browser to see which selector are used (as in AIMMS WebUI):
-
-![image](/uploads/68c9b08a6beb1677bbe407f75cd562a1/image.png)
+As you can see, this CSS is referring to some particular class (css selector), for example ``n.n-Parameter``. Since it is CSS styling, you can inspect your file directly in the browser to see which selector are used (as in AIMMS WebUI):
 
 Current types that are recognized and passed to the HTML are the following:
 * Parameter as `n.n-Parameter`
@@ -147,25 +147,25 @@ More info about regular expression follows:
 
 A wonderful website to check your regular expression is https://regex101.com/r/dU5fO8/33
 
-You may change any rules in this `aimms.py`. Mind the comma at the end of your rule :smile: 
+You may change any rules in this `AIMMSLexer.py`. Mind the comma at the end of your rule :smile: 
 
 Existence check for declared identifiers: a hack in ``get_token_unprocessed``
 ------------------------------------------------------------------------------
 After the priority list has been run through, the Lexer will **re-scan the entire code block** a last time to isolate any identifier names declaration, and highlights other identifier names occurrences in the entire code block with regards to their type (Parameter is DarkCyan, StringParameter is black, Variable is PaleVioletRed etc.). 
 
-The code for this last behavior is in the ``get_tokens_unprocessed`` function (at the end of the `aimms.py`)
+The code for this last behavior is in the ``get_tokens_unprocessed`` function (at the end of the `AIMMSLexer.py`)
 
 > this makes sense, since names are unique in AIMMS
 
-How To improve or correct the lexer (`aimms.py`) ? The $ symbol use case
+How To improve or correct the lexer (`AIMMSLexer.py`) ? The $ symbol use case
 --------------------------------------------------------------------------
 Recently, we saw an obvious bug in the AIMMS lexer: the $ symbol, also called Sparsity Modifier, was not recognized by the lexer. This has resulted in a red box around every $ symbols part of an AIMMS code block. 
 
-![image](uploads/056fbaf5b265b6ef9d332ff0b775cf71/image.png)
+![image](uploads/symbol.png)
 
 (remark: when an expression is not matched with any regular expression shown previously in [Default rules used to highlight text](https://gitlab.aimms.com/aimms/documentation/wikis/advanced-use/aimms-lexer-for-syntax-highlighting#default-rules-used-to-highlight-text), this red box behavior will occur)
  
-To fix it, we had to modify a regular expression rule from the lexer, contained in `aimms.py`.
+To fix it, we had to modify a regular expression rule from the lexer, contained in `AIMMSLexer.py`.
 Our rule of interest was the **AIMMS mathematical operators** rule, matching and highlighting any AIMMS operators (`:=,=,<,>,(,),{,},`...), bold and black.
 
 ``` python
