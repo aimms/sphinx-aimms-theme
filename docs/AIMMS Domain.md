@@ -62,38 +62,45 @@ You can use fields to give more details about arguments and their expected types
 List of supported types, following the same rules as ``aimms:function::`` :
 
 
-* aimms:function::
-* aimms:procedure::
-* aimms:externalprocedure::
-* aimms:parameter::
-* aimms:elementparameter::
-* aimms:stringparameter::
-* aimms:set::
-* aimms:variable::
-* aimms:constraint::
-* aimms:mathematicalprogram::
-* aimms:file::
-* aimms:handle::
+| Supported Types             |
+|-----------------------------|
+| aimms:function::            |
+| aimms:procedure::           |
+| aimms:externalprocedure::   |
+| aimms:parameter::           |
+| aimms:elementparameter::    |
+| aimms:stringparameter::     |
+| aimms:set::                 |
+| aimms:variable::            |
+| aimms:constraint::          |
+| aimms:mathematicalprogram:: |
+| aimms:file::                |
+| aimms:handle::              |
 
 
 List of supported types, following the same rules as ``aimms:module::`` :
 
-* aimms:module::
-* aimms:librarymodule::
+| Supported Types             |
+|-----------------------------|
+| aimms:module::              |
+| aimms:librarymodule::       |
+
 
 
 These roles are provided to refer to the described objects:
 
-* :aimms:func:
-* :aimms:procedure:
-* :aimms:librarymodule:
-* :aimms:externalprocedure:
-* :aimms:parameter:
-* :aimms:elementparameter:
-* :aimms:stringparameter:
-* :aimms:set:
-* :aimms:variable:
-* :aimms:constraint:
-* :aimms:mathematicalprogram:
-* :aimms:file:
-* :aimms:handle:
+| Supported roles             |
+|-----------------------------|
+| :aimms:func:                |
+| :aimms:procedure:           |
+| :aimms:librarymodule:       |
+| :aimms:externalprocedure:   |
+| :aimms:parameter:           |
+| :aimms:elementparameter:    |
+| :aimms:stringparameter:     |
+| :aimms:set:                 |
+| :aimms:variable:            |
+| :aimms:constraint:          |
+| :aimms:mathematicalprogram: |
+| :aimms:file:                |
+| :aimms:handle:              |
