@@ -71,6 +71,9 @@ html_theme_options = {
 
     Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page
 
+* **display_local_toc** 
+
+    Boolean - Displays a local table of content for each file, except top index files.
     
     
 
