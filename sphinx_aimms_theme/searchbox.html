@@ -1,6 +1,6 @@
 {%- if builder != 'singlehtml' %}
 <div role="search">
-    <div><a href="{{ pathto(master_doc) }}"><p style="color: rgb(87,87,87); font-weight: bold; font-size: x-large; margin: 0;">{{ theme_doc_title|upper }}</p></a></div>
+    <h3><a href= "{{ pathto(master_doc) }}">{{ theme_doc_title|upper }}</a></h3>
     <form id="rtd-search-form" class="wy-form" action="{{ pathto('search') }}" method="get">
     <input type="text" name="q" placeholder="{{ _('Search docs') }}" />
     <input type="hidden" name="check_keywords" value="yes" />
