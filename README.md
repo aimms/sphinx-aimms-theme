@@ -11,8 +11,9 @@ Please find the documentation of those 2 elements following the links above.
 This theme is inherited from the great [Read the Docs](https://github.com/readthedocs/sphinx_rtd_theme) but can work with any Sphinx project. 
 
 You can find a working demo of the theme on AIMMS documentation websites:
-- [How-to](https://how-to.aimms.com)
-- [Documentation](https://documentation.aimms.com)
+- [AIMMS Function reference](https://documentation.aimms.com/functionreference)
+- [AIMMS How-to](https://how-to.aimms.com)
+- [AIMMS Documentation](https://documentation.aimms.com)
 
 Installation
 ===============
@@ -69,11 +70,13 @@ html_theme_options = {
     
 * **display_community_embeddable** 
 
-    Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page
+    Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page 
+    
+    > Send an email to support@aimms.com if you would like to activate the community embeddable on your docs.
 
 * **display_local_toc** 
 
-    Boolean - Displays a local table of content for each file, except top index files.
+    Boolean - Displays a dynamic local table of content for each file, except top index files.
     
     
 
