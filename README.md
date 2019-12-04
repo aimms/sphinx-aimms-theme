@@ -33,16 +33,6 @@ extensions = [
 html_theme = "sphinx_aimms_theme"
 ```
 
-Run the theme locally
-----------------------
-
-If you would like to modify the theme, or correct something, you may build the theme locally. 
-
-To do so, please download the theme repo on your computer, and run in the repo location:
-
-`python setup.py develop`
-
-> First, you may want to uninstall the theme installed, by running `python -m pip uninstall sphinx-aimms-theme`
 
 Configuration
 ================
@@ -90,6 +80,24 @@ html_theme_options = {
     Boolean - Displays a dynamic local table of content for each file, except top index files.
     
     
+Use, contribute, fix, improve the theme
+===================================
+
+Run the theme locally
+----------------------
+
+If you would like to modify the theme, or correct something, you may build the theme locally. 
+
+To do so, please download the theme repo on your computer, and run in the repo location:
+
+`python setup.py develop`
+
+> First, you may want to uninstall the theme installed, by running `python -m pip uninstall sphinx-aimms-theme`
+
+Contribution and support
+------------------------------
+
+If you would like to propose a change, or if something's not clear, just send an e-mail to support@aimms.com
 
 Note
 ---------
