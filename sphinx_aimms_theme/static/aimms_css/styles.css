@@ -117,6 +117,13 @@
     /*Convention*/
     color: black; }
 
+/* --------------     Styling for intersphinx references -------------------------------- */
+
+/*Brown color for items coming from the AIMMS Function Reference intersphinx*/
+a[title="(in AIMMS Function Reference)"] .aimms .pre { color: brown; }
+
+/* --------------     Global document styling -------------------------------- */
+
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend, p {
   font-family: "Open Sans", sans-serif;
   margin-top: 20px; }
@@ -561,5 +568,5 @@ li.toctree-l2 span.link-wrapper a.reference.internal {
   display: none; }
   .affix .localtoc {
     top: 30px; }
-
+  
 /*# sourceMappingURL=styles.css.map */
