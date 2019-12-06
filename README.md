@@ -11,8 +11,9 @@ Please find the documentation of those 2 elements following the links above.
 This theme is inherited from the great [Read the Docs](https://github.com/readthedocs/sphinx_rtd_theme) but can work with any Sphinx project. 
 
 You can find a working demo of the theme on AIMMS documentation websites:
-- [How-to](https://how-to.aimms.com)
-- [Documentation](https://documentation.aimms.com)
+- [AIMMS Function reference](https://documentation.aimms.com/functionreference)
+- [AIMMS How-to](https://how-to.aimms.com)
+- [AIMMS Documentation](https://documentation.aimms.com)
 
 Installation
 ===============
@@ -31,6 +32,7 @@ extensions = [
 
 html_theme = "sphinx_aimms_theme"
 ```
+
 
 Configuration
 ================
@@ -69,13 +71,33 @@ html_theme_options = {
     
 * **display_community_embeddable** 
 
-    Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page
+    Boolean - Displays an embbedable from the AIMMS Community, showing topics filtered with the title of the current page 
+    
+    > Send an email to support@aimms.com if you would like to activate the community embeddable on your docs.
 
 * **display_local_toc** 
 
-    Boolean - Displays a local table of content for each file, except top index files.
+    Boolean - Displays a dynamic local table of content for each file, except top index files.
     
     
+Use, contribute, fix, improve the theme
+===================================
+
+Run the theme locally
+----------------------
+
+If you would like to modify the theme, or correct something, you may build the theme locally. 
+
+To do so, please download the theme repo on your computer, and run in the repo location:
+
+`python setup.py develop`
+
+> First, you may want to uninstall the theme installed, by running `python -m pip uninstall sphinx-aimms-theme`
+
+Contribution and support
+------------------------------
+
+If you would like to propose a change, or if something's not clear, just send an e-mail to support@aimms.com
 
 Note
 ---------
