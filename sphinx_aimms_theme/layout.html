@@ -18,13 +18,25 @@
 
 {% endif %} {% endblock %} 
 
-{% block document %} {{ super() }} 
-
-{% if theme_display_community_help_link %}
+{% block document %} {{ super() }} {% if theme_display_community_help_link %}
 <a href="https://community.aimms.com/search?q={{ title|striptags|e }}" target="_blank">Give feedback on the AIMMS Community</a> {% endif %} {% endblock %} 
 
-
 {% block footer %} {{ super() }}
+
+{% if theme_google_analytics_id and theme_generate_google_analytics %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ theme_google_analytics_id }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', '{{ theme_google_analytics_id }}');
+</script>
+{% endif %}
 
 {% if theme_display_community_embeddable %}
 
@@ -38,5 +50,21 @@
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script');
 </script>
+
+{% endif %} 
+
+{% if theme_display_algolia_search %}
+
+<!-- Algolia docsearch BEGIN -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+appId: '{{ theme_algolia_appid }}',
+apiKey: '{{ theme_algolia_appkey }}',
+indexName: '{{ theme_algolia_indexname }}',
+inputSelector: '#rtd-search-form input[type=text]',
+debug: true // Set debug to true if you want to inspect the dropdown
+});
+</script>
+<!-- Algolia docsearch END -->
 
 {% endif %} {% endblock %}
