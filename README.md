@@ -18,7 +18,7 @@ You can find a working demo of the theme on AIMMS documentation websites:
 Installation
 ===============
 
-This theme is distributed on PyPI and can be installed with pip:
+This theme is distributed on [PyPI](https://pypi.org/project/sphinx-aimms-theme/) and can be installed with pip:
 
 `pip install sphinx-aimms-theme`
 
@@ -78,7 +78,40 @@ html_theme_options = {
 * **display_local_toc** 
 
     Boolean - Displays a dynamic local table of content for each file, except top index files.
+
+* **generate_google_analytics**
     
+    Boolean - generates a google analytics HTML code as follows on every page:
+    
+    ``` html
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_id }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+        
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+        
+            gtag('config', '{{ google_analytics_id }}');
+        </script>
+        
+    ```
+    Where ``google_analytics_id`` is the following option
+
+* **google_analytics_id**
+
+    Change the Google Analytics ID that is included on every page
+
+* **display_algolia_search**
+    
+    Replace the current default search box with an Algolia extension. 
+    You must have registered your docs website on https://community.algolia.com/docsearch/#join-docsearch-program, and thus obtain from Algolia the following 3 options:
+
+* **algolia_appid**
+* **algolia_appkey**
+* **algolia_indexname**
     
 Use, contribute, fix, improve the theme
 ===================================
