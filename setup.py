@@ -6,7 +6,7 @@ import sys
 setup(
     
     name = "sphinx_aimms_theme",
-    version = '0.1.4',
+    version = '0.1.5',
     license = "MIT",
     packages= ['sphinx_aimms_theme'],
     url = "https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme",
