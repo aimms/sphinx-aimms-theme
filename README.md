@@ -18,7 +18,7 @@ You can find a working demo of the theme on AIMMS documentation websites:
 Installation
 ===============
 
-This theme is distributed on PyPI and can be installed with pip:
+This theme is distributed on [PyPI](https://pypi.org/project/sphinx-aimms-theme/) and can be installed with pip:
 
 `pip install sphinx-aimms-theme`
 
