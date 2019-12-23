@@ -20,9 +20,6 @@ def setup(app):
     app.add_js_file('copycode.js')
     app.add_js_file('https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js')
     
-    # including css for the AIMMS declaration icons attached to the AIMMS Domain
-    app.add_css_file('declaration_icons.css')
-    
 
 
 
