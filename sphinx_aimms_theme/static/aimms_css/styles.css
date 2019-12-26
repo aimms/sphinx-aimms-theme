@@ -121,7 +121,7 @@
 
 dl.librarymodule em.property {
     
-    background-image: url("icons/librarymodule.png");
+    background-image: url("../icons/librarymodule.png");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -130,7 +130,7 @@ dl.librarymodule em.property {
 
 dl.procedure em.property {
     
-    background-image: url("icons/ProcedureIcon.PNG");
+    background-image: url("../icons/ProcedureIcon.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -139,7 +139,7 @@ dl.procedure em.property {
 
 dl.externalprocedure em.property {
     
-    background-image: url("icons/externalprocedure.png");
+    background-image: url("../icons/externalprocedure.png");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -148,7 +148,7 @@ dl.externalprocedure em.property {
 
 dl.function em.property {
     
-    background-image: url("icons/FunctionIcon.PNG");
+    background-image: url("../icons/FunctionIcon.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -157,7 +157,7 @@ dl.function em.property {
 
 dl.parameter em.property {
     
-    background-image: url("icons/MEDeclPar.PNG");
+    background-image: url("../icons/MEDeclPar.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -166,7 +166,7 @@ dl.parameter em.property {
 
 dl.elementparameter em.property {
     
-    background-image: url("icons/MEDeclElemPar.PNG");
+    background-image: url("../icons/MEDeclElemPar.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -175,7 +175,7 @@ dl.elementparameter em.property {
 
 dl.stringparameter em.property {
     
-    background-image: url("icons/MEDeclStringPar.PNG");
+    background-image: url("../icons/MEDeclStringPar.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -184,7 +184,7 @@ dl.stringparameter em.property {
 
 dl.set em.property {
     
-    background-image: url("icons/MEDeclSet.PNG");
+    background-image: url("../icons/MEDeclSet.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -193,7 +193,7 @@ dl.set em.property {
 
 dl.index em.property {
     
-    background-image: url("icons/MEDeclIndex.PNG");
+    background-image: url("../icons/MEDeclIndex.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -202,7 +202,7 @@ dl.index em.property {
 
 dl.variable em.property {
     
-    background-image: url("icons/MEDeclVar.PNG");
+    background-image: url("../icons/MEDeclVar.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -211,7 +211,7 @@ dl.variable em.property {
 
 dl.constraint em.property {
     
-    background-image: url("icons/MEDeclCon.PNG");
+    background-image: url("../icons/MEDeclCon.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -220,7 +220,7 @@ dl.constraint em.property {
 
 dl.mathematicalprogram em.property {
     
-    background-image: url("icons/MEDeclMP.PNG");
+    background-image: url("../icons/MEDeclMP.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -229,7 +229,7 @@ dl.mathematicalprogram em.property {
 
 dl.file em.property {
     
-    background-image: url("icons/MEDeclFile.PNG");
+    background-image: url("../icons/MEDeclFile.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -238,7 +238,7 @@ dl.file em.property {
 
 dl.handle em.property {
     
-    background-image: url("icons/MEDeclHandle.PNG");
+    background-image: url("../icons/MEDeclHandle.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;
