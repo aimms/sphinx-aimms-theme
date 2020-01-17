@@ -68,13 +68,18 @@
 
 <!-- Algolia docsearch BEGIN -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-appId: '{{ theme_algolia_appid }}',
-apiKey: '{{ theme_algolia_appkey }}',
-indexName: '{{ theme_algolia_indexname }}',
-inputSelector: '#rtd-search-form input[type=text]',
-debug: true // Set debug to true if you want to inspect the dropdown
-});
+<script type="text/javascript"> 
+docsearch({
+  appId: '{{ theme_algolia_appid }}',
+  apiKey: '{{ theme_algolia_appkey }}',
+  indexName: '{{ theme_algolia_indexname }}',
+  inputSelector: '#rtd-search-form input[type=text]',
+  debug: true, // Set debug to true if you want to inspect the dropdown
+  algoliaOptions: {
+    hitsPerPage: {{ theme_algolia_hitsPerPage }},
+    // See https://www.algolia.com/doc/api-reference/api-parameters/
+  },
+  });
 </script>
 <!-- Algolia docsearch END -->
 
