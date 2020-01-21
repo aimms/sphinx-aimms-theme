@@ -136,7 +136,8 @@ Some CSS code is shipped together with the theme to customize your home page "bo
 
 You may (or not) use it to show your own topics. To help you customize it, please see the [RST](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html) source code of the How-to Home page below:
 
-```
+``` html
+
 .. image:: Images/rocket-32.png
    :scale: 0
 
