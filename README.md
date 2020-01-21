@@ -4,7 +4,7 @@ This [Sphinx](https://www.sphinx-doc.org/en/master/) theme was designed to provi
 
 **This theme also includes:** 
 - an **[AIMMS pygment lexer](docs/AIMMS Lexer.md)** to highlight your AIMMS [code blocks in sphinx](http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block) 
-- an **[AIMMS Domain](docs/AIMMS Domain.md)** to document your own AIMMS code, and to [crosslink with other AIMMS documentation websites ](https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme/blob/master/docs/AIMMS%20Domain.md#coupling-the-domain-with-intersphinx)
+- an **[AIMMS Domain](docs/AIMMS Domain.md)** to document your own AIMMS code, and to [**crosslink** with other AIMMS documentation websites ](https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme/blob/master/docs/AIMMS%20Domain.md#coupling-the-domain-with-intersphinx)
 
 Please find the documentation of those 2 elements following the links above.
 
