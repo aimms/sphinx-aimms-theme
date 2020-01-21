@@ -9,22 +9,25 @@ Basic Usage
 ============
 
 ```
-.. aimms:parameter:: spam(eggs)
+.. aimms:parameter:: P_demand(l)
 
-   Spam or ham the foo.
+   Numerical demand of a certain location l.
 ```
 
-This describes an AIMMS parameter called spam indexed over the eggs index.
+This describes an AIMMS parameter called P_demand indexed over the l index.
 
 The domains also provide roles that link back to these object descriptions. For example, to link to the parameter described in the example above, you could say
 
 ```
-The function :aimms:parameter:`spam` does a similar thing.
+The parameter :aimms:parameter:`P_demand` gives similar data.
 ```
 
 As you can see, both directive and role names contain the domain name and the directive name. 
 
+Example
+=========
 
+The AIMMS Domain is used extensively in the [AIMMS Function Reference](https://documentation.aimms.com/functionreference/index.html).
 
 The AIMMS Domain
 ===================
@@ -104,3 +107,38 @@ These roles are provided to refer to the described objects:
 | :aimms:mathematicalprogram: |
 | :aimms:file:                |
 | :aimms:handle:              |
+
+Coupling the domain with intersphinx
+=======================================
+
+Cross link with other AIMMS documentation websites
+
+[Intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html) extension enables you to import the global index (a list of all titles, files and declared domain objects with their URL) from another sphinx repository (website).
+
+Basic usage
+-
+
+For example, you may refer to ``AllIdentifiers`` set from the AIMMS function reference using the following syntax:
+
+```
+:aimms:set:`AllIdentifiers`
+```
+
+This will result in an clickable hyperlink redirecting you to:
+
+https://documentation.aimms.com/functionreference/predefined-identifiers/model-related-identifiers/allidentifiers.html
+
+
+**Tip:** if you are not sure about the type (set, parameter, elementparameter, etc.), you may also use 
+```
+:any:`AllIdentifiers`
+``` 
+
+This will be available provided that you've included the AIMMS function reference in your intersphinx set up. You can do so by adding to the following line to the ``conf.py`` file:
+
+``` python
+intersphinx_mapping = {'functionreference': ('https://documentation.aimms.com/functionreference/',
+                                  (None,'objects-functionreference.inv'))}
+```
+
+``objects-functionreference.inv`` is a potential backup that you may include in your repository if you can't connect to the internet while building your docs as described [here](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_mapping)
