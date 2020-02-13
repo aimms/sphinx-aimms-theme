@@ -8,7 +8,7 @@ an **AIMMS [pygment lexer](http://pygments.org/)** to highlight your AIMMS [code
 Intro
 ---------
 
-The AIMMS lexer is meant to highlight any aimms code block in our RST files, according to AIMMS procedure script IDE. It supports AMS files as well, i.e. **Text representation** of an AIMMS model.
+The AIMMS lexer is meant to highlight any aimms code block in our RST files, according to AIMMS procedure script IDE. It supports AMS files as well, i.e. **[Text representation](https://community.aimms.com/aimms-developer-12/text-representation-vs-what-to-put-in-the-aimms-gui-165)** of an AIMMS model.
 
 To use is it, you should use the `code-block` directive, as follows:
 
