@@ -248,7 +248,7 @@ dl.handle em.property {
 /* --------------     Styling for intersphinx references -------------------------------- */
 
 /*Brown color for items coming from the AIMMS Function Reference intersphinx*/
-a[title="(in AIMMS Function Reference)"] .aimms .pre { color: brown; }
+a[title="(in AIMMS Function Reference)"] .pre { color: brown; }
 
 /* --------------     Global document styling -------------------------------- */
 
