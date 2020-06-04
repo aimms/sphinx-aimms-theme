@@ -15,6 +15,8 @@ You can find a working demo of the theme on AIMMS documentation websites:
 - [AIMMS How-to](https://how-to.aimms.com)
 - [AIMMS Documentation](https://documentation.aimms.com)
 
+To generate your docs out of this theme from an AIMMS model, please take a look at the following repo: https://gitlab.com/ArthurdHerbemont/conversion-aimms-ams2rst
+
 Installation
 ===============
 
