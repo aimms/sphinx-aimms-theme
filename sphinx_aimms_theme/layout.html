@@ -31,8 +31,10 @@
 
 {% endif %} {% endblock %} 
 
-{% block document %} {{ super() }} {% if theme_display_community_help_link %}
-<a href="https://community.aimms.com/search?q={{ title|striptags|e }}" target="_blank">Give feedback on the AIMMS Community</a> {% endif %} {% endblock %} 
+{% block document %} {{ super() }} 
+{% if last_updated %} <div style="margin-bottom: 1em;">Last updated: {{last_updated}} </div> {% endif %}
+{% if theme_display_community_help_link %} <a href="https://community.aimms.com/search?q={{ title|striptags|e }}" target="_blank">Give feedback on the AIMMS Community</a> {% endif %} 
+{% endblock %} 
 
 {% block footer %} {{ super() }}
 

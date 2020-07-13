@@ -298,17 +298,6 @@ body {
     max-width: 25px !important;
     margin-right: 10px; }
 
-.whatever input[type=submit] {
-  border-radius: 0;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  background-color: #009dd9 !important; }
-
-/* comments screensize fix */
-@media (max-width: 1280px) {
-  div .whatever {
-    max-width: 100%; } }
 .wy-table-responsive table td {
   white-space: normal; }
 
