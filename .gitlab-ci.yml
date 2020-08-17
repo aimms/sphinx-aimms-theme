@@ -1,7 +1,7 @@
 image: python:3.7-alpine
 
 before_script:
-   - apk add --no-cache gcc openssl-dev libffi-dev
+   - apk add --no-cache gcc build-dependencies openssl-dev libffi-dev
    - pip install twine
    - pip install re
    - pip install pygments
