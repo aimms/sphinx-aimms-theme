@@ -2,6 +2,9 @@ image: python:3.8-alpine
 
 before_script:
    - pip install twine
+   - pip install re
+   - pip install pygments
+   - pip install sphinx
    - python setup.py sdist
 
 deploy:
