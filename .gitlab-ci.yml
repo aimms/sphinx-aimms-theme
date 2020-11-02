@@ -15,3 +15,10 @@ deploy:
     - twine upload dist/*
   only:
     - master
+
+build_other_docs:
+  stage: deploy
+  script:
+    - curl --request POST --form "token=$CI_JOB_TOKEN" --form ref=master https://gitlab.aimms.com/aimms/customer-support/aimms-how-to/trigger/pipeline
+  only:
+    - master
