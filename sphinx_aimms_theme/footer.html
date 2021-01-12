@@ -22,7 +22,7 @@
         <div><a href="https://aimms.com/english/privacy-statement/">PRIVACY STATEMENT</a></div>
     </div>
 
-    # one needs to set "html_last_updated_fmt = '%b %d, %Y'" in the conf.py file in order to define 'last_updated' variable and display the below copyright
+    {# one needs to set "html_last_updated_fmt = '%b %d, %Y'" in the conf.py file in order to define 'last_updated' variable and display the below copyright #}
     {% if last_updated %} <div class="copy">© 1989 - {{ last_updated[-5:] }} AIMMS B.V.</div> {% endif %} 
 
     {%- block extrafooter %} {% endblock %}
