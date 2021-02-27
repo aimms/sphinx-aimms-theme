@@ -15,7 +15,7 @@ def setup(app):
     from .AIMMSLexer import AIMMSLexer
     from .AIMMSDomain import AIMMSDomain
     from pygments.formatters import HtmlFormatter
-    app.add_lexer("aimms", AIMMSLexer())
+    app.add_lexer("aimms", AIMMSLexer)
     logger = logging.getLogger(__name__)
     logger.info('AIMMS Lexer added')
     app.add_domain(AIMMSDomain)
