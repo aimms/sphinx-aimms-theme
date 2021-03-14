@@ -50,11 +50,11 @@
 <h3 style="font-weight: bold;">Docs</h3>
 <p>
 {% if theme_is_github %}
-<a class="fa fa-github" href="{{ theme_repo_url }}/-/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
+<a class="fa fa-github" href="{{ theme_repo_url }}/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
 <br>
 <a class="fa fa-github" href="{{ theme_repo_url }}/issues" target="_blank" > Create an issue</a> to suggest an improvement to this page
 {% elif theme_is_gitlab %}
-<a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/tree/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
+<a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
 <br>
 <a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/issues" target="_blank" > Create an issue</a> to suggest an improvement to this page
 {% endif %}
