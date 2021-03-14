@@ -33,7 +33,51 @@
 
 {% block document %} {{ super() }} 
 {% if last_updated %} <div style="margin-bottom: 1em;">Last updated: {{last_updated}} </div> {% endif %}
-{% if theme_display_community_help_link %} <a href="https://community.aimms.com/search?q={{ title|striptags|e }}" target="_blank">Give feedback on the AIMMS Community</a> {% endif %} 
+
+{% if theme_display_help_and_feedback %}
+<br>
+<style>
+@media (min-width: 768px){
+  .right.container-help-feedback{ padding-left: 15px; border-left: 1px solid #dbdbdb;}
+}
+</style>
+<div class="admonition hint document" style="margin-bottom: 1em;" id="help-&-feedback">
+
+<p class="admonition-title">Help & Feedback</p>
+
+<div class="flex-container" style="display:flex; flex-wrap: wrap;">
+<div class="left container-help-feedback" style="position: relative; width: 100%;flex: 3 200px; padding-right:15px;" >
+<h3 style="font-weight: bold;">Docs</h3>
+<p>
+{% if theme_is_github %}
+<a class="fa fa-github" href="{{ theme_repo_url }}/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
+<br>
+<a class="fa fa-github" href="{{ theme_repo_url }}/issues" target="_blank" > Create an issue</a> to suggest an improvement to this page
+{% elif theme_is_gitlab %}
+<a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
+<br>
+<a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/issues" target="_blank" > Create an issue</a> to suggest an improvement to this page
+{% endif %}
+
+
+</p>
+<h3 style="font-weight: bold;">Product</h3>
+<p style="padding-bottom:15px;">
+<a class="fa fa-users" href="https://community.aimms.com/topic/new" target="_blank" > Create a Topic</a> if there's something you don't like about this feature
+<br>
+<a class="fa fa-users" href="https://community.aimms.com/share-your-product-ideas-37" target="_blank" > Propose functionality</a> by submitting a feature request
+</p>
+</div>
+
+<div class="right container-help-feedback" style="width: 100%; flex: 1 200px;">
+<h3 style="font-weight: bold;">Support</h3>
+<p>Not what you where looking for? <a class="fa fa-search" href="https://www.aimms.com/support/" target="_blank" style="font-weight: bold;" > Search the docs</a></p>
+<p>Remember we also have <a class="fa fa-users" href="https://community.aimms.com/ask-the-community-4" target="_blank" style="font-weight: bold;" > community support</a></p>
+<p>For problems setting up or using this feature <a href="mailto:support@aimms.com" > Request support</a></p>
+</div><br>
+</div>
+</div>
+{% endif %}
 {% endblock %} 
 
 {% block footer %} {{ super() }}

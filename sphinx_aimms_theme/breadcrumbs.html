@@ -54,6 +54,15 @@
             {% endfor %}
             <li>{{ title }}</li>
             {% endblock %} 
+            <li class="side-rate-review" style="float:right;">
+            {% if theme_display_help_and_feedback %}
+            {% if theme_is_github %}
+              <a class="fa fa-github" href="{{ theme_repo_url }}/tree/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}"> Edit on Github</a>
+            {% elif theme_is_gitlab %}
+              <a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}"> Edit on Gitlab</a>
+            {% endif %}
+            {% endif %}
+            </li>
         </ul>
 
         {% if (theme_prev_next_buttons_location == 'top' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
@@ -70,7 +79,10 @@
 
 {% if display_toc %}
 <div class="localtoc">
-    <div class="caption">{{ _('Table Of Contents') }}</div>
+    <div class="caption"> 
+      <a class="fa fa-exclamation-circle" href="#help-&-feedback" > Help & feedback</a>
+      <br><br>
+      {{ _('Table Of Contents') }}</div>
     {{ toc }}
 </div>
 {% endif %} 

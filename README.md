@@ -124,6 +124,27 @@ html_theme_options = {
 
     Set the number of items shown in algolia's search result dropdown
 
+* **display_help_and_feedback**
+
+    Boolean - Displays a "Help & feedback" footer block at the end of every page content. This Block is linking to many useful resources for AIMMS users, and crosslinks to the open source repository.
+    Default - False
+    
+* **is_github**
+
+    Boolean - Is your code hosted on Github ? 
+    Default - False
+    
+* **is_gitlab**
+
+    Boolean - Is your code hosted on Gitlab ? 
+    Default - False
+    
+* **repo_url**
+
+    String - The URL link to your open source repository hosting your documentation docs. This is used to build crosslinks on a page to its open source conterpart, to ease potential peer contribution.
+    Default is "https://gitlab.com/ArthurdHerbemont/testdocs"
+
+
 Theme source code
 -------------------
 
