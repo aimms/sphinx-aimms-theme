@@ -1,7 +1,7 @@
 image: python:3.7-alpine
 
 before_script:
-   - apk add gcc musl-dev python3-dev libffi-dev openssl-dev
+   - apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo rust
    - pip install twine
    - pip install sphinx
    - python setup.py sdist
