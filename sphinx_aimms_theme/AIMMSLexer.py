@@ -24,6 +24,7 @@ id_re = re.compile(r'(?i)(Set|Calendar|Horizon|index|Parameter|ElementParameter|
 Token.Name.Set
 Token.Name.Parameter
 Token.Name.StringParameter
+Token.Name.UnitParameter
 Token.Name.ElementParameter
 Token.Name.Variable
 Token.Name.Constraint
@@ -33,6 +34,7 @@ Token.Name.DatabaseTable
 Token.Name.Convention
 Token.Name.Index
 Token.Name.Procedure
+Token.Name.Calendar
 
 
 def switcher(argument):
@@ -40,12 +42,14 @@ def switcher(argument):
         "Set":Name.Set,
         "Parameter":Name.Parameter,
         "StringParameter":Name.StringParameter,
+        "UnitParameter":Name.UnitParameter,
         "ElementParameter":Name.ElementParameter,
         "Variable":Name.Variable,
         "Constraint":Name.Constraint,
         "MathematicalProgram":Name.MathematicalProgram,
         "Quantity":Name.Quantity,
         "DatabaseTable":Name.DatabaseTable,
+        "Calendar":Name.Calendar,
         "Convention":Name.Convention,
         "Procedure":Name.Procedure,
         "Index":Name.Index}
