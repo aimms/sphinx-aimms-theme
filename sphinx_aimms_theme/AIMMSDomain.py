@@ -146,6 +146,8 @@ class AIMMSObject(ObjectDescription):
             return _('%s() (element parameter)') % name
         elif self.objtype == 'stringparameter':
             return _('%s() (string parameter)') % name
+        elif self.objtype == 'unitparameter':
+            return _('%s() (unit parameter)') % name
         elif self.objtype == 'set':
             return _('%s() (set)') % name
         elif self.objtype == 'index':
@@ -156,6 +158,10 @@ class AIMMSObject(ObjectDescription):
             return _('%s() (constraint)') % name
         elif self.objtype == 'mathematicalprogram':
             return _('%s() (Mathematical Program)') % name
+        elif self.objtype == 'databasetable':
+            return _('%s() (Database Table)') % name
+        elif self.objtype == 'calendar':
+            return _('%s() (Calendar)') % name
         elif self.objtype == 'file':
             return _('%s() (File)') % name
         elif self.objtype == 'handle':
@@ -289,6 +295,12 @@ class AIMMSStringParameter(AIMMSCallable):
     allow_nesting = False
     has_arguments = True
 
+class AIMMSUnitParameter(AIMMSCallable):
+    """Like a callable but with a different prefix."""
+    display_prefix = 'Unit Parameter '
+    allow_nesting = False
+    has_arguments = True
+
 class AIMMSElementParameter(AIMMSCallable):
     """Like a callable but with a different prefix."""
     display_prefix = 'Element Parameter '
@@ -324,6 +336,18 @@ class AIMMSMathematicalProgram(AIMMSCallable):
     display_prefix = 'Mathematical Program '
     allow_nesting = False
     has_arguments = True     
+
+class AIMMSDatabaseTable(AIMMSCallable):
+    """Like a callable but with a different prefix."""
+    display_prefix = 'Mathematical Program '
+    allow_nesting = False
+    has_arguments = True    
+
+class AIMMSCalendar(AIMMSCallable):
+    """Like a callable but with a different prefix."""
+    display_prefix = 'Calendar '
+    allow_nesting = False
+    has_arguments = True    
 
 class AIMMSFile(AIMMSCallable):
     """Like a callable but with a different prefix."""
@@ -422,12 +446,15 @@ class AIMMSDomain(Domain):
         'externalprocedure':    ObjType(_('externalprocedure'),     'externalprocedure'),
         'parameter':        ObjType(_('parameter'), 'parameter'),
         'stringparameter':  ObjType(_('stringparameter'), 'stringparameter'),
+        'stringparameter':  ObjType(_('unitparameter'), 'unitparameter'),
         'elementparameter': ObjType(_('elementparameter'), 'elementparameter'),
         'set':              ObjType(_('set'), 'set'),
         'index':              ObjType(_('index'), 'index'),
         'variable':         ObjType(_('variable'), 'variable'),
         'constraint':       ObjType(_('constraint'), 'constraint'),
         'mathematicalprogram':       ObjType(_('mathematicalprogram'), 'mathematicalprogram'),
+        'databasetable':       ObjType(_('databasetable'), 'databasetable'),
+        'calendar':       ObjType(_('calendar'), 'calendar'),
         'file':       ObjType(_('file'), 'file'),
         'handle':       ObjType(_('handle'), 'handle'),
         'data':             ObjType(_('data'),      'data'),
@@ -446,11 +473,14 @@ class AIMMSDomain(Domain):
         'parameter': AIMMSParameter,
         'elementparameter': AIMMSElementParameter,
         'stringparameter': AIMMSStringParameter,
+        'unitparameter': AIMMSUnitParameter,
         'set': AIMMSSet,
         'index': AIMMSIndex,
         'variable': AIMMSVariable,
         'constraint': AIMMSConstraint,
         'mathematicalprogram': AIMMSMathematicalProgram,
+        'databasetable': AIMMSDatabaseTable,
+        'calendar': AIMMSCalendar,
         'file': AIMMSFile,
         'handle': AIMMSHandle, 
         'data':      AIMMSObject,
@@ -470,11 +500,14 @@ class AIMMSDomain(Domain):
         'parameter': AIMMSXRefRole(),
         'elementparameter': AIMMSXRefRole(),
         'stringparameter': AIMMSXRefRole(),
+        'unitparameter': AIMMSXRefRole(),
         'set': AIMMSXRefRole(),
         'index': AIMMSXRefRole(),
         'variable': AIMMSXRefRole(),
         'constraint': AIMMSXRefRole(),
         'mathematicalprogram': AIMMSXRefRole(),
+        'databasetable': AIMMSXRefRole(),
+        'calendar': AIMMSXRefRole(),
         'file': AIMMSXRefRole(),
         'handle': AIMMSXRefRole(),
         'data':      AIMMSXRefRole(),

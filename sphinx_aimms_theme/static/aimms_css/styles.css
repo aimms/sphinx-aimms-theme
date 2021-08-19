@@ -102,12 +102,18 @@
   .highlight-aimms .highlight .n.n-StringParameter {
     /*String Parameter*/
     color: black; }
+  .highlight-aimms .highlight .n.n-UnitParameter {
+    /*Unit Parameter*/
+    color: purple; }
   .highlight-aimms .highlight .n.n-Quantity {
     /*Quantity*/
     color: black; }
   .highlight-aimms .highlight .n.n-DatabaseTable {
     /*DatabaseTable*/
     color: purple; }
+  .highlight-aimms .highlight .n.n-Calendar {
+    /*Calendar*/
+    color: black; }
   .highlight-aimms .highlight .n.n-Index {
     /*Index*/
     color: black; }
@@ -182,6 +188,15 @@ dl.stringparameter em.property {
     padding-top: 2px;
 }
 
+dl.unitparameter em.property {
+    
+    background-image: url("../icons/MEDeclUnitPar.PNG");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
 dl.set em.property {
     
     background-image: url("../icons/MEDeclSet.PNG");
@@ -221,6 +236,24 @@ dl.constraint em.property {
 dl.mathematicalprogram em.property {
     
     background-image: url("../icons/MEDeclMP.PNG");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+dl.databasetable em.property {
+    
+    background-image: url("../icons/MEDeclDatabaseTable.PNG");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+dl.calendar em.property {
+    
+    background-image: url("../icons/MEDeclCal.PNG");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 20px;

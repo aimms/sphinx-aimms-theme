@@ -73,10 +73,13 @@ List of supported types, following the same rules as ``aimms:function::`` :
 | aimms:parameter::           |
 | aimms:elementparameter::    |
 | aimms:stringparameter::     |
+| aimms:unitparameter::       |
 | aimms:set::                 |
+| aimms:calendar::            |
 | aimms:variable::            |
 | aimms:constraint::          |
 | aimms:mathematicalprogram:: |
+| aimms:databasetable::       |
 | aimms:file::                |
 | aimms:handle::              |
 
@@ -101,10 +104,13 @@ These roles are provided to refer to the described objects:
 | :aimms:parameter:           |
 | :aimms:elementparameter:    |
 | :aimms:stringparameter:     |
+| :aimms:unitparameter:       |
 | :aimms:set:                 |
+| :aimms:calendar:            |
 | :aimms:variable:            |
 | :aimms:constraint:          |
 | :aimms:mathematicalprogram: |
+| :aimms:databasetable:       |
 | :aimms:file:                |
 | :aimms:handle:              |
 
