@@ -148,3 +148,9 @@ intersphinx_mapping = {'functionreference': ('https://documentation.aimms.com/fu
 ```
 
 ``objects-functionreference.inv`` is a potential backup that you may include in your repository if you can't connect to the internet while building your docs as described [here](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_mapping)
+
+Adding new supported types to the AIMMS domain
+================================================
+
+You may refer to https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme/-/commit/22bdafce5219ce1306463030310f4064a8a2bf1b which is a perfect example of how Calendar, Database Tables and Unit parameter types were added to the AIMMS domain.
+
