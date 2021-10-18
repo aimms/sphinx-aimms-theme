@@ -2,6 +2,7 @@
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+    {% block menu %} 
     <nav class="main-menu">
         <a href="https://aimms.com/" class="logo"><img src="{{ pathto('_static/AIMMS_logo_H_RGB.png', 1) }}" alt="AIMMS Logo" title="AIMMS Help &amp; Support"></a>
         <ul id="menu-main-site-navigation-1">
@@ -37,14 +38,16 @@
                 </ul>
             </li>
             <li><a href="https://www.aimms.com/support/downloads/">Downloads</a></li>
-            <li><a href="https://aimms.com/english/developers/downloads/download-aimms/release-notes">Release Notes</a>
+            <li><a>Release Notes</a>
                 <ul>
-                    <li><a href="https://documentation.aimms.com/release-notes.html">AIMMS RELEASE NOTES</a></li>
-                    <li><a href="https://documentation.aimms.com/pro-release-notes.html">AIMMS PRO RELEASE NOTES</a></li>
+                    <li><a href="https://documentation.aimms.com/release-notes.html">AIMMS Development RELEASE NOTES</a></li>
+                    <li><a href="https://documentation.aimms.com/pro-release-notes.html">AIMMS Deployment RELEASE NOTES</a></li>
+                    <li><a href="https://scnavigator-manual.aimms.com/release-notes.html">AIMMS SC App Store RELEASE NOTES</a></li>
                 </ul>
             </li>
     </nav>
-
+    {% endblock %}
+    {% block OSlink %}
     {% if pagename != master_doc %}
         <ul class="wy-breadcrumbs">
             {% block breadcrumbs %}
@@ -73,6 +76,7 @@
         </div>
         {% endif %}
     {% endif %}
+    {% endblock %}
 </div>
 
 {% if pagename == master_doc or not theme_display_local_toc %} {% set display_toc = False %} {% endif %}
@@ -80,8 +84,10 @@
 {% if display_toc %}
 <div class="localtoc">
     <div class="caption"> 
+      {% if theme_display_help_and_feedback %}
       <a class="fa fa-exclamation-circle" href="#help-&-feedback" > Help & feedback</a>
       <br><br>
+      {% endif %}
       {{ _('Table Of Contents') }}</div>
     {{ toc }}
 </div>

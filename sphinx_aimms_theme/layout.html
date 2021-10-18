@@ -26,6 +26,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .wy-side-scroll {overflow: auto;}
 .wy-nav-side { overflow: visible; }
 .ds-input {vertical-align: inherit!important;}
+.algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {max-height: 600px;}
+@media (max-width: 700px) { .algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {max-height: 400px; max-width: 300px;} }
 </style>
 {% endif %}
 <link rel="shortcut icon" href="{{ url_root }}_static/favicon.ico"/>
@@ -131,6 +133,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 {% endif %} 
 
+{% block algolia %}
 {% if theme_display_algolia_search %}
 
 <!-- Algolia docsearch BEGIN -->
@@ -150,4 +153,4 @@ docsearch({
 </script>
 <!-- Algolia docsearch END -->
 
-{% endif %} {% endblock %}
+{% endif %} {% endblock %} {% endblock %}
