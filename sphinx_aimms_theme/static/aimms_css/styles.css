@@ -717,15 +717,15 @@ li.toctree-l2 span.link-wrapper a.reference.internal {
   .affix .localtoc {
     top: 30px; }
 
-/* Add a "student" icon before every academy.aimms.com links*/
-.rst-content.style-external-links a.reference.external[href*="academy.aimms"]:before {
+/* Add a "student cap" icon before every academy.aimms.com links*/
+.rst-content a.reference.external[href*="academy.aimms"]:before {
     font-family: FontAwesome;
     content: "\f19d";
     color: #b3b3b3;
     font-size: 100%;
     margin: 0 .2em;
 }
-.rst-content.style-external-links a.reference.external[href*="academy.aimms"]:after {
+.rst-content a.reference.external[href*="academy.aimms"]:after {
     content: "";
 }  
 /*# sourceMappingURL=styles.css.map */

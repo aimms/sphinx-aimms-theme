@@ -111,6 +111,14 @@ html_theme_options = {
 
     Change the Google Analytics ID that is included on every page
 
+* **generate_google_tag_manager**
+    
+    Boolean - generates the google tag manager container snippet on every page, based on the following ``google_tag_manager_id``
+
+* **google_tag_manager_id**
+
+    Change the google tag manager ID that is included on every page
+
 * **display_algolia_search**
     
     Replace the current default search box with an Algolia extension. 
@@ -247,9 +255,16 @@ Use, contribute, fix, improve the theme
 Run the theme locally
 ----------------------
 
-If you would like to modify the theme, or correct something, you may build the theme locally. 
+If you would like to modify the theme, or correct something, you may use the theme locally on your computer.
 
-To do so, please download the theme repo on your computer, and run in the repo location:
+There are at least 2 ways to do that. 
+
+1. Copy paste [the theme folder](https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme/-/tree/master/sphinx_aimms_theme) in your sphinx project folder, and configure the [html_theme_path](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_theme_path) in your [conf.py](https://www.sphinx-doc.org/en/master/usage/configuration.html) file to point to that theme folder as follows:
+   ``` python
+   html_theme_path=['sphinx_aimms_theme']
+   ```
+
+2. Otherwise, you may want to change your python local package setup temporarily. To do so, download the theme repo on your computer, and run in the repo location:
 
 `python setup.py develop`
 
