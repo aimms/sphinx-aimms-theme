@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','{{ theme_google_tag_manager_id }}');</script>
 <!-- End Google Tag Manager -->
-{{ super() }} {% endif %} {% endblock %}
+{{ super() }} {% endif %} {%- endblock %}
 
 {% block extrahead %}
 {% if theme_display_algolia_search %}
@@ -21,12 +21,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 /*---------- Algolia search ----------*/
 /*In order to have the search widget on top of the content */
-.wy-side-nav-search {position: fixed;top: 0;background-color: #f5f5f5;}
-.wy-menu-vertical {width: 300px;margin-top: 110px;}
+.wy-side-nav-search {top: 0;background-color: #f5f5f5;}
+.wy-menu-vertical {width: 300px;}
 .wy-side-scroll {overflow: auto;}
 .wy-nav-side { overflow: visible; }
 .ds-input {vertical-align: inherit!important;}
-.algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {max-height: 600px;}
+.algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {position: fixed; max-height: 600px;}
 @media (max-width: 700px) { .algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {max-height: 400px; max-width: 300px;} }
 </style>
 {% endif %}
