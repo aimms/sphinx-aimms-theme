@@ -1,10 +1,15 @@
-image: python:3.7-alpine
-
 before_script:
-   - apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo rust
-   - pip install twine
-   - pip install sphinx
-   - python setup.py sdist
+  - sudo apt-get install software-properties-common -y
+  - sudo add-apt-repository ppa:deadsnakes/ppa -y
+  - sudo apt-get update -y
+  - sudo apt-get install python3.8 python3.8-dev python3.8-venv python3-pip python3-venv python-enchant -y
+  - python3.8 -mvenv ../myenv
+  - source ../myenv/bin/activate
+
+   - sudo apt-get install gcc musl-dev libffi-dev openssl-dev cargo rust
+   - python3.8 -mpip install twine
+   - python3.8 -mpip install sphinx
+   - python3.8 setup.py sdist
 
 deploy:
   stage: deploy
@@ -15,3 +20,5 @@ deploy:
     - twine upload dist/*
   only:
     - master
+  tags:
+    - ubuntu
