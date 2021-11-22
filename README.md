@@ -5,8 +5,9 @@ This [Sphinx](https://www.sphinx-doc.org/en/master/) theme was designed to provi
 **This theme also includes:** 
 - an **[AIMMS pygment lexer](docs/AIMMS Lexer.md)** to highlight your AIMMS [code blocks in sphinx](http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block) 
 - an **[AIMMS Domain](docs/AIMMS Domain.md)** to document your own AIMMS code, and to [**crosslink** with other AIMMS documentation websites ](https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme/blob/master/docs/AIMMS%20Domain.md#coupling-the-domain-with-intersphinx)
+- an **[AIMMS spelling wordlist](docs/AIMMS spelling wordlist.md)** to use as a spelling wordlist exception file for the [sphinx spelling checker extension](https://sphinxcontrib-spelling.readthedocs.io/en/latest/)
 
-Please find the documentation of those 2 elements following the links above.
+Please find the documentation of those elements following the links above.
 
 This theme is inherited from the great [Read the Docs](https://github.com/readthedocs/sphinx_rtd_theme) but can work with any Sphinx project. 
 
