@@ -6,3 +6,4 @@ recursive-include sphinx_aimms_theme *.js
 recursive-include sphinx_aimms_theme *.png
 recursive-include sphinx_aimms_theme *.PNG
 recursive-include sphinx_aimms_theme *.ico
+recursive-include sphinx_aimms_theme *.txt
