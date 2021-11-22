@@ -23,6 +23,11 @@ python3 -msphinx -b spelling . _build/spelling
 ```
 Please refer to [sphinxcontrib-spelling extension documentation](https://sphinxcontrib-spelling.readthedocs.io/en/latest/)
 
+Modifying the spelling word list
+-
+
+You may modify this word list (add or remove words) and submit a merge request. 1 word per line, and you may sort this file using a service provider like https://dedupelist.com/ for example.
+
 Note about adding several wordlist files
 -
 
