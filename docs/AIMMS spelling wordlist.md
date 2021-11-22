@@ -27,7 +27,7 @@ Note about adding several wordlist files
 -
 
 ``` python
-# Getting the spelling word list from the sphinx-aimms-theme and adding a personal file
+# Getting the spelling word list from the sphinx-aimms-theme and adding a personal file. Those 2 files will be merged.
 spelling_word_list_filename = ["my_wordlist_file.txt",os.path.join(os.path.dirname(sphinx_aimms_theme.__file__),"spelling_wordlist.txt")]
 
 ```
