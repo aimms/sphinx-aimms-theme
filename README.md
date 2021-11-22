@@ -4,9 +4,10 @@ This [Sphinx](https://www.sphinx-doc.org/en/master/) theme was designed to provi
 
 **This theme also includes:** 
 - an **[AIMMS pygment lexer](docs/AIMMS Lexer.md)** to highlight your AIMMS [code blocks in sphinx](http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block) 
-- an **[AIMMS Domain](docs/AIMMS Domain.md)** to document your own AIMMS code, and to [**crosslink** with other AIMMS documentation websites ](https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme/blob/master/docs/AIMMS%20Domain.md#coupling-the-domain-with-intersphinx)
+- an **[AIMMS Domain](docs/AIMMS Domain.md)** to document your own AIMMS code, and to [**crosslink** with other AIMMS documentation websites ](docs/AIMMS%20Domain.md#coupling-the-domain-with-intersphinx)
+- an **[AIMMS spelling wordlist](docs/AIMMS spelling wordlist.md)** to use as a spelling wordlist exception file for the [sphinx spelling checker extension](https://sphinxcontrib-spelling.readthedocs.io/en/latest/)
 
-Please find the documentation of those 2 elements following the links above.
+Please find the documentation of those elements following the links above.
 
 This theme is inherited from the great [Read the Docs](https://github.com/readthedocs/sphinx_rtd_theme) but can work with any Sphinx project. 
 
@@ -259,7 +260,7 @@ If you would like to modify the theme, or correct something, you may use the the
 
 There are at least 2 ways to do that. 
 
-1. Copy paste [the theme folder](https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme/-/tree/master/sphinx_aimms_theme) in your sphinx project folder, and configure the [html_theme_path](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_theme_path) in your [conf.py](https://www.sphinx-doc.org/en/master/usage/configuration.html) file to point to that theme folder as follows:
+1. Copy paste [the theme folder](sphinx_aimms_theme) in your sphinx project folder, and configure the [html_theme_path](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_theme_path) in your [conf.py](https://www.sphinx-doc.org/en/master/usage/configuration.html) file to point to that theme folder as follows:
    ``` python
    html_theme_path=['sphinx_aimms_theme']
    ```
