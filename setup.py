@@ -9,9 +9,9 @@ setup(
     version = '0.1.36',
     license = "MIT",
     packages= ['sphinx_aimms_theme'],
-    url = "https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme",
+    url = "https://github.com/aimms/sphinx-aimms-theme",
     description = 'AIMMS theme for Sphinx',
-    long_description='Please refer to https://gitlab.com/ArthurdHerbemont/sphinx-aimms-theme',
+    long_description='Please refer to https://github.com/aimms/sphinx-aimms-theme#readme',
     author = "AIMMS User Support",
     author_email = "support@aimms.com",
 
