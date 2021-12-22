@@ -729,3 +729,9 @@ li.toctree-l2 span.link-wrapper a.reference.internal {
     content: "";
 }  
 /*# sourceMappingURL=styles.css.map */
+
+/* --------------     Styling for MathJax display engine -------------------------------- */
+mjx-container[display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
