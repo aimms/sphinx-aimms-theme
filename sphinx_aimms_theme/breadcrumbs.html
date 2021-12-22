@@ -79,6 +79,7 @@
     {% endblock %}
 </div>
 
+{% block right_side_panel %}
 {% if pagename == master_doc or not theme_display_local_toc %} {% set display_toc = False %} {% endif %}
 
 {% if display_toc %}
@@ -92,3 +93,4 @@
     {{ toc }}
 </div>
 {% endif %} 
+{% endblock %}
