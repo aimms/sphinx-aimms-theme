@@ -84,6 +84,7 @@
 
 {% if display_toc %}
 <div class="localtoc">
+    {% block local_toc %}
     <div class="caption"> 
       {% if theme_display_help_and_feedback %}
       <a class="fa fa-exclamation-circle" href="#help-&-feedback" > Help & feedback</a>
@@ -91,6 +92,7 @@
       {% endif %}
       {{ _('Table Of Contents') }}</div>
     {{ toc }}
+    {% endblock %}
 </div>
 {% endif %} 
 {% endblock %}
