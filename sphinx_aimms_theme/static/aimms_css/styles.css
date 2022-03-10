@@ -242,6 +242,15 @@ dl.mathematicalprogram em.property {
     padding-top: 2px;
 }
 
+dl.quantity em.property {
+    
+    background-image: url("../icons/MEDeclQnt.PNG");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
 dl.databasetable em.property {
     
     background-image: url("../icons/MEDeclDatabaseTable.PNG");
@@ -729,3 +738,9 @@ li.toctree-l2 span.link-wrapper a.reference.internal {
     content: "";
 }  
 /*# sourceMappingURL=styles.css.map */
+
+/* --------------     Styling for MathJax display engine -------------------------------- */
+mjx-container[display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+}

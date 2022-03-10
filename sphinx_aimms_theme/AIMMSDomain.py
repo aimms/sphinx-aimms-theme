@@ -158,6 +158,8 @@ class AIMMSObject(ObjectDescription):
             return _('%s() (constraint)') % name
         elif self.objtype == 'mathematicalprogram':
             return _('%s() (Mathematical Program)') % name
+        elif self.objtype == 'quantity':
+            return _('%s() (Quantity)') % name
         elif self.objtype == 'databasetable':
             return _('%s() (Database Table)') % name
         elif self.objtype == 'calendar':
@@ -337,6 +339,12 @@ class AIMMSMathematicalProgram(AIMMSCallable):
     allow_nesting = False
     has_arguments = True     
 
+class AIMMSQuantity(AIMMSCallable):
+    """Like a callable but with a different prefix."""
+    display_prefix = 'Quantity '
+    allow_nesting = False
+    has_arguments = True    
+
 class AIMMSDatabaseTable(AIMMSCallable):
     """Like a callable but with a different prefix."""
     display_prefix = 'Mathematical Program '
@@ -453,6 +461,7 @@ class AIMMSDomain(Domain):
         'variable':         ObjType(_('variable'), 'variable'),
         'constraint':       ObjType(_('constraint'), 'constraint'),
         'mathematicalprogram':       ObjType(_('mathematicalprogram'), 'mathematicalprogram'),
+        'quantity':       ObjType(_('quantity'), 'quantity'),
         'databasetable':       ObjType(_('databasetable'), 'databasetable'),
         'calendar':       ObjType(_('calendar'), 'calendar'),
         'file':       ObjType(_('file'), 'file'),
@@ -479,6 +488,7 @@ class AIMMSDomain(Domain):
         'variable': AIMMSVariable,
         'constraint': AIMMSConstraint,
         'mathematicalprogram': AIMMSMathematicalProgram,
+        'quantity' : AIMMSQuantity,
         'databasetable': AIMMSDatabaseTable,
         'calendar': AIMMSCalendar,
         'file': AIMMSFile,
@@ -506,6 +516,7 @@ class AIMMSDomain(Domain):
         'variable': AIMMSXRefRole(),
         'constraint': AIMMSXRefRole(),
         'mathematicalprogram': AIMMSXRefRole(),
+        'quantity': AIMMSXRefRole(),
         'databasetable': AIMMSXRefRole(),
         'calendar': AIMMSXRefRole(),
         'file': AIMMSXRefRole(),

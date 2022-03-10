@@ -120,6 +120,7 @@ class AIMMSLexer(RegexLexer):
             (r'(?i)(\bEV_\w+\b)', bygroups(Name.Variable)),
             (r'(?i)(\bC_\w+\b)', bygroups(Name.Constraint)),
             (r'(?i)(\bMP_\w+\b)', bygroups(Name.MathematicalProgram)),
+            (r'(?i)(\bSI_\w+\b)', bygroups(Name.Quantity)),
             (r'(?i)(\bDBT_\w+\b)', bygroups(Name.DatabaseTable)),
             (r'(?i)(\bPR_\w+\b)', bygroups(Name.Variable)),
             (r'(?i)(\bCNV_\w+\b)', bygroups(Name.Convention)),
