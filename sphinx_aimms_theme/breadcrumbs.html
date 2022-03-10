@@ -79,10 +79,12 @@
     {% endblock %}
 </div>
 
+{% block right_side_panel %}
 {% if pagename == master_doc or not theme_display_local_toc %} {% set display_toc = False %} {% endif %}
 
 {% if display_toc %}
 <div class="localtoc">
+    {% block local_toc %}
     <div class="caption"> 
       {% if theme_display_help_and_feedback %}
       <a class="fa fa-exclamation-circle" href="#help-&-feedback" > Help & feedback</a>
@@ -90,5 +92,7 @@
       {% endif %}
       {{ _('Table Of Contents') }}</div>
     {{ toc }}
+    {% endblock %}
 </div>
 {% endif %} 
+{% endblock %}
