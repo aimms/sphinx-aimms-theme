@@ -313,6 +313,8 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend, p {
       background-color: #009dd9 !important;
       border-color: #009dd9;
       color: #fff !important; }
+	.btn.btn-neutral:active	{
+      padding: 15px 30px; }
 
 .wy-nav-content {
   max-width: 100%;
