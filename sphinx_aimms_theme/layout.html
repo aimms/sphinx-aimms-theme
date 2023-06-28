@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="https://use.typekit.net/ydq4pad.css">
 <link rel='stylesheet' id='font-awesome-original-css' href='https://techblog.aimms.com/wp-content/plugins/dpArticleShare/css/font-awesome.css?ver=1.3.4' type='text/css' media='all' /> 
 
+
 {%- block scripts %}
 {% if theme_generate_google_tag_manager %}
 <!-- Google Tag Manager -->
@@ -12,6 +13,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','{{ theme_google_tag_manager_id }}');</script>
 <!-- End Google Tag Manager -->
+{{ super() }} {% endif %} 
+
+{% if theme_generate_aimms_support_menu %}
+<script>
+(function(){
+	var script = document.createElement('script');
+	script.src = 'https://aimms.com/support-menu/js/asm.min.js?v=' + new Date().getTime();
+	script.setAttribute('data-id', '{{ aimms_support_menu_id }}');
+	document.head.appendChild(script);
+})();
+</script>
 {{ super() }} {% endif %} {%- endblock %}
 
 {% block extrahead %}
