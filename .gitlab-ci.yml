@@ -19,5 +19,3 @@ deploy:
     - twine upload dist/*
   only:
     - master
-  tags:
-    - ubuntu
