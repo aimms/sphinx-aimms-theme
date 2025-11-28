@@ -82,20 +82,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="flex-container" style="display:flex; flex-wrap: wrap;">
 <div class="left container-help-feedback" style="position: relative; width: 100%;flex: 3 200px; padding-right:15px;" >
+
+{% if theme_is_github %}
 <h3 style="font-weight: bold;">Docs</h3>
 <p>
-{% if theme_is_github %}
 <a class="fa fa-github" href="{{ theme_repo_url }}/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
 <br>
 <a class="fa fa-github" href="{{ theme_repo_url }}/issues" target="_blank" > Create an issue</a> to suggest an improvement to this page
+</p>
+
 {% elif theme_is_gitlab %}
+<h3 style="font-weight: bold;">Docs</h3>
+<p>
 <a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/blob/{{ "master" }}/{{ conf_py_path }}{{ pagename }}{{ ".rst" }}" target="_blank" > Edit this page</a> to fix an error or add an improvement in a pull request
 <br>
 <a class="fa fa-gitlab" href="{{ theme_repo_url }}/-/issues" target="_blank" > Create an issue</a> to suggest an improvement to this page
+</p>
 {% endif %}
 
 
-</p>
+
 <h3 style="font-weight: bold;">Product</h3>
 <p style="padding-bottom:15px;">
 <a class="fa fa-users" href="https://community.aimms.com/topic/new" target="_blank" > Create a topic</a> if there's something you don't like about this feature
@@ -108,7 +114,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h3 style="font-weight: bold;">Support</h3>
 <p>Not what you where looking for? <a class="fa fa-search" href="https://www.aimms.com/support/" target="_blank" style="font-weight: bold;" > Search the docs</a></p>
 <p>Remember we also have <a class="fa fa-users" href="https://community.aimms.com/ask-the-community-4" target="_blank" style="font-weight: bold;" > Community support</a></p>
-<p>Still having trouble ? <a href="mailto:support@aimms.com" > Reach out to us</a></p>
+<p>Still having trouble? <a href="mailto:support@aimms.com" > Reach out to us</a></p>
 </div><br>
 </div>
 </div>
