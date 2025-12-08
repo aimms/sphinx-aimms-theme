@@ -1,5 +1,5 @@
-# sphinx-aimms-theme
-
+# sphinx-aimms-theme 
+ 
 This [Sphinx](https://www.sphinx-doc.org/en/master/) theme was designed to provide a great reader experience for documentation users on both desktop and mobile devices for AIMMS projects and libraries.
 
 **This theme also includes:** 
