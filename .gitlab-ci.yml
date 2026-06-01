@@ -12,8 +12,8 @@ deploy:
     TWINE_PASSWORD: $PYPI_PASSWORD
   script:
     # - apt-get install -y gcc musl-dev libffi-dev openssl libssl-dev cargo rustc
-    - uv pip install twine
-    - python3 setup.py sdist
+    - uv pip install build twine
+    - python3 -m build
     - twine upload dist/*
   only:
     - master
