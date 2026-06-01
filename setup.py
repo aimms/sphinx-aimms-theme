@@ -1,12 +1,11 @@
-from distutils.core import setup
-import setuptools
+from setuptools import setup
 import sys
 
 
 setup(
     
     name = "sphinx_aimms_theme",
-    version = '0.1.47',
+    version = '0.1.48',
     license = "MIT",
     packages= ['sphinx_aimms_theme'],
     url = "https://github.com/aimms/sphinx-aimms-theme",
